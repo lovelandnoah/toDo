@@ -1,8 +1,8 @@
 class CreatePosts < ActiveRecord::Migration
   def change
     create_table :posts do |t|
-      t.string :Item
-      t.string :Description
+      t.string :item
+      t.string :description
 
       t.timestamps null: false
     end
