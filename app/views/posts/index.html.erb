@@ -4,4 +4,6 @@
 	<h2><%= post.Item %></h2>
 	<h3><%= post.Description %></h3>
 	<%= link_to 'Show To Do List', post_path(post) %>
+	<%= link_to 'Edit Todo', edit_post_path(post) %>
+	<%= link_to 'Delete', post, method: :delete %>
 <% end %>
