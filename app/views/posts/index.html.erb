@@ -1,0 +1,7 @@
+<h1> ToDo </h1>
+<p><%= link_to 'New ToDo', new_post_path %></p>
+<% @posts.each do |post| %>
+	<h2><%= post.Item %></h2>
+	<h3><%= post.Description %></h3>
+	<%= link_to 'Show To Do List', post_path(post) %>
+<% end %>
